@@ -3,7 +3,7 @@ import re
 
 import numpy as np 
 
-ranked_bios_m=None
+ranked_bios=None
 def remove_stop_words(text):
     words = text.split()
     return " ".join(word for word in words if word.lower() not in ENGLISH_STOP_WORDS)
@@ -17,37 +17,37 @@ def get_languges(languages):
         return []  
     return languages.split(";")
 
-def get_ranked_results_m(tf_model_m, df_m, query_m):
-    results_m = tf_model_m.rank_queries([query_m])
-    result_m = results_m.get(query_m, {})
-    ranked_bios_m = np.array(result_m.get("rankedIndexes", []))
-    scores_m = np.array(result_m.get("score", []))
-    return ranked_bios_m, scores_m
+def get_ranked_results(tfodel, df, query):
+    results = tfodel.rank_queries([query])
+    result = results.get(query, {})
+    ranked_bios = np.array(result.get("rankedIndexes", []))
+    scores = np.array(result.get("score", []))
+    return ranked_bios, scores
 
-def calculate_dynamic_threshold_m(scores_m, df_m, ranked_bios_m):
-    if len(scores_m) == 0:
+def calculate_dynamic_threshold(scores, df, ranked_bios):
+    if len(scores) == 0:
         return np.array([]), np.array([]), 0.0
     
-    max_desired_m = len(df_m) // 3
-    if len(scores_m) > 1:
-        diffs_m = scores_m[:-1] - scores_m[1:]
-        elbow_idx_m = np.argmax(diffs_m) + 1
-        threshold_m = scores_m[elbow_idx_m]
+    max_desired = len(df) // 3
+    if len(scores) > 1:
+        diffs = scores[:-1] - scores[1:]
+        elbow_idx = np.argmax(diffs) + 1
+        threshold = scores[elbow_idx]
     else:
-        threshold_m = scores_m[0]
+        threshold = scores[0]
     
-    mask_m = scores_m >= threshold_m
-    selected_bios_m = ranked_bios_m[mask_m][:max_desired_m]
-    selected_scores_m = scores_m[mask_m][:max_desired_m]
-    return selected_bios_m, selected_scores_m, threshold_m  
+    mask = scores >= threshold
+    selected_bios = ranked_bios[mask][:max_desired]
+    selected_scores = scores[mask][:max_desired]
+    return selected_bios, selected_scores, threshold  
 
-def write_ranked_results_m(path_m, df_m, selected_bios_m, selected_scores_m):
-    with open(path_m, "w") as file_m:
-        if len(selected_bios_m) > 0:
-            for idx_m, score_m in zip(selected_bios_m, selected_scores_m):
-                file_m.write(f"Bio: {df_m['Bio'][idx_m]}\n")
-                file_m.write(f"Score: {score_m:.4f}\n")
+def write_ranked_results(path, df, selected_bios, selected_scores):
+    with open(path, "w") as file:
+        if len(selected_bios) > 0:
+            for idx, score in zip(selected_bios, selected_scores):
+                file.write(f"Bio: {df['Bio'][idx]}\n")
+                file.write(f"Score: {score:.4f}\n")
             return True
         else:
-            file_m.write("no related bios")
+            file.write("no related bios")
             return False

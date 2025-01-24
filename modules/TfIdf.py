@@ -1,7 +1,7 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-class TfIdf_moh:
+class TfIdfoh:
 
     def __init__(self):
 

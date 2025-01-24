@@ -6,7 +6,7 @@ from sklearn.decomposition import PCA
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.cluster import KMeans, DBSCAN
 from sklearn_extra.cluster import KMedoids
-from sklearn.metrics import adjusted_mutual_info_score, adjusted_rand_score
+from sklearn.metrics import adjustedutual_info_score, adjusted_rand_score
 from modules.util import get_languges
 import seaborn as sns
 
@@ -18,18 +18,18 @@ class Clustering:
         self.results = {}
 
     def preprocess_data(self):
-        categorical_features_m = self.df.copy()
+        categorical_features = self.df.copy()
         
-        categorical_features_m['Project Count'] = StandardScaler().fit_transform(categorical_features_m[['Project Count']])
+        categorical_features['Project Count'] = StandardScaler().fit_transform(categorical_features[['Project Count']])
         
         categorical_cols = ['Certifications', 'Extracurricular Activities', 'Career Interest']
-        categorical_features_m = pd.get_dummies(categorical_features_m, columns=categorical_cols)
+        categorical_features = pd.get_dummies(categorical_features, columns=categorical_cols)
         
-        langs = get_languges(categorical_features_m['Programming Languages'].str)
-        categorical_features_m = pd.concat([categorical_features_m, langs], axis=1)
-        categorical_features_m = categorical_features_m.drop(['Programming Languages'], axis=1)
+        langs = get_languges(categorical_features['Programming Languages'].str)
+        categorical_features = pd.concat([categorical_features, langs], axis=1)
+        categorical_features = categorical_features.drop(['Programming Languages'], axis=1)
         
-        self.features = categorical_features_m.values
+        self.features = categorical_features.values
         return self.features
 
     def reduce_dimensions(self, method='PCA'):
@@ -59,7 +59,7 @@ class Clustering:
 
     def evaluate_clusters(self, labels):
         return {
-            'AMI': adjusted_mutual_info_score(self.true_labels, labels),
+            'AMI': adjustedutual_info_score(self.true_labels, labels),
             'ARI': adjusted_rand_score(self.true_labels, labels)
         }
 
