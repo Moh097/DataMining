@@ -1,4 +1,3 @@
-```markdown
 # Data Mining Assignment at AlHussein Technical University (HTU)
 
 This repository contains code for a **Data Mining** assignment at **AlHussein Technical University (HTU)**.  
@@ -11,9 +10,13 @@ It demonstrates various concepts in data mining, including:
 
 ---
 
-### Overview of clustering
+## 1. Clustering Module
+
+**File**: `modules/clustering.py`
+
+### Overview of Clustering
 - **Preprocessing**:  
-  - Scales numeric features
+  - Scales numeric features (e.g., project counts).  
   - Encodes categorical features (certifications, extracurricular activities, career interests).  
   - Extracts programming languages per student.
 
@@ -37,13 +40,23 @@ It demonstrates various concepts in data mining, including:
 
 ---
 
+## 2. TF-IDF Module
+
 **File**: `modules/tfidf_moh.py`
 
-### Overview of Tfidf
-- Converts text (user bios) into TF-IDF vectors.
+### Overview of TF-IDF
+- Converts text (e.g., user bios) into TF-IDF vectors.
 - Computes **cosine similarity** between each query and the bios corpus to rank documents.
 
 ---
+
+## 3. Graph Module
+
+**File**: `modules/graph.py`
+
+### Overview of Graph Representation
+- Uses **NetworkX** for graph/digraph creation.
+- Visualizes relationships between students, programming languages, and certifications.
 
 ---
 
@@ -58,8 +71,6 @@ The primary objectives include:
 4. **Text Analysis** using TF-IDF  
 5. **Graph Representation & Visualization** with NetworkX
 
-Students learn how to handle both numeric and text data, apply different mining techniques, and visualize results to gain insights into the data.
-
 ---
 
 ## Repository Structure
@@ -68,7 +79,7 @@ Students learn how to handle both numeric and text data, apply different mining 
 .
 ├─ modules/
 │  ├─ clustering.py       
-│  ├─ Tfidf.py          
+│  ├─ tfidf_moh.py          
 │  ├─ graph.py          
 │  └─ util.py           
 ├─ README.md            
@@ -79,20 +90,27 @@ Students learn how to handle both numeric and text data, apply different mining 
 
 ## Installation
 
-1. **Clone** the repository:
-
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/YourUserName/YourRepoName.git
    cd YourRepoName
    ```
 
 2. **Install dependencies**:
-
    ```bash
    pip install -r requirements.txt
    ```
 
+   Required packages:
+   - `scikit-learn`
+   - `pandas`
+   - `seaborn`
+   - `matplotlib`
+   - `networkx`
+   - `sklearn-extra`
+
+---
 
 **AlHussein Technical University (HTU) – Data Mining Course Assignment**  
-Created by: **Mohammad Almasri**
-```
+**Created by**: **Mohammad Almasri**
+
