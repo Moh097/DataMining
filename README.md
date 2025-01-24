@@ -92,8 +92,8 @@ The primary objectives include:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YourUserName/YourRepoName.git
-   cd YourRepoName
+   git clone https://github.com/Moh097/DataMining.git
+   cd DataMining
    ```
 
 2. **Install dependencies**:
