@@ -1,0 +1,85 @@
+query: Data Science and AI
+bio 1:
+Abeer is a Data Science student at Jordan University of Science & Technology, with an enthusiasm for AI and data analysis. She is eager to explore data science projects and aims to become a Data Scientist, focusing on AI-driven solutions for business challenges.
+score: 0.5571
+bio 2:
+Dalia is a second-year Data Science student at Al Hussein Technical University with an interest in AI development, active in the Data Science Society.
+score: 0.4984
+bio 3:
+Rami is a third-year Data Science student at the University of Jordan. He is passionate about working on AI models and currently assists in an AI research lab. He plans to work as a Data Scientist and contribute to AI advancements in healthcare.
+score: 0.4889
+bio 4:
+Rasha is a second-year Data Science student at Al Hussein Technical University, with an interest in big data and AI model development. She is part of the AI Model Development Team and aspires to work as a Data Scientist, focusing on machine learning and AI in the healthcare industry.
+score: 0.4707
+bio 5:
+Omar is a senior Data Science student at Al Hussein Technical University. He is active in the AI and Data Club and plans to pursue a career as a Data Analyst.
+score: 0.4689
+----------------------------------------
+query: AI mentor
+bio 1:
+Laila has always been fascinated by the patterns data reveals. Now a sophomore in Data Science and AI at Al Hussein Technical University, she spends her time analyzing datasets and volunteering as an AI Club mentor. Her goal is to make impactful contributions as a Data Scientist, blending her academic insights with real-world applications.
+score: 0.2919
+bio 2:
+Yasmin is a first-year student at Princess Sumaya University for Technology, where she is honing her skills in programming and data science. She loves helping her peers as a mentor and aims to become a Software Developer, focusing on developing efficient applications for real-world problems.
+score: 0.2634
+bio 3:
+Lina is a first-year Computer Science student at Princess Sumaya University for Technology, with a focus on software engineering and AI applications. She assists in the AI Lab and works on AI-driven software solutions. Lina aims to become a Software Developer, specializing in building AI applications.
+score: 0.2363
+bio 4:
+Rami is a third-year Data Science student at the University of Jordan. He is passionate about working on AI models and currently assists in an AI research lab. He plans to work as a Data Scientist and contribute to AI advancements in healthcare.
+score: 0.2087
+bio 5:
+Muna, a student at Jordan University of Science & Technology, is already passionate about artificial intelligence and machine learning. As a member of the AI Research Club, she is eager to contribute to AI advancements and dreams of becoming an AI Researcher focused on developing next-generation technologies.
+score: 0.1875
+----------------------------------------
+query: Impactful contributions
+bio 1:
+Laila has always been fascinated by the patterns data reveals. Now a sophomore in Data Science and AI at Al Hussein Technical University, she spends her time analyzing datasets and volunteering as an AI Club mentor. Her goal is to make impactful contributions as a Data Scientist, blending her academic insights with real-world applications.
+score: 0.3145
+bio 2:
+Yara, a senior at Princess Sumaya University for Technology, brings creativity to problem-solving. She has been a volunteer developer for multiple NGOs and developed impactful software solutions. After graduation, she aims to work as a Software Engineer, combining her passion for coding and helping communities.
+score: 0.1660
+bio 3:
+A forth-year student at Princess Sumaya University for Technology, Omar is a rising star in Cyber Security. His hands-on experience with security systems and competition involvement showcases his skill set. Omar is also certified in CompTIA Security+, and he aspires to protect organizations from cyber threats as a Cybersecurity Analyst.
+score: 0.0000
+bio 4:
+Rania entered the University of Jordan's Computer Science program with a natural curiosity for coding. Now, she's not only excelling academically but also sharing her knowledge as a peer programming tutor. Rania is focused on expanding her coding skills in languages like Python and C, aiming to develop robust applications as a Software Developer.
+score: 0.0000
+bio 5:
+Khaled has a knack for translating data into meaningful insights. As a senior at Philadelphia University, he balances academics with his volunteer tutoring. Known for his analytical mindset and knowledge of SQL and Python, Khaled plans to further his expertise as a Data Scientist, focusing on innovative solutions for data challenges.
+score: 0.0000
+----------------------------------------
+query: Data patterns
+bio 1:
+Muna is a second-year Data Science student at the University of Jordan, interested in analyzing large datasets to uncover hidden patterns. She is an active member of the Data Science Club and aspires to be a Data Scientist, specializing in predictive analytics.
+score: 0.3817
+bio 2:
+Laila has always been fascinated by the patterns data reveals. Now a sophomore in Data Science and AI at Al Hussein Technical University, she spends her time analyzing datasets and volunteering as an AI Club mentor. Her goal is to make impactful contributions as a Data Scientist, blending her academic insights with real-world applications.
+score: 0.2844
+bio 3:
+Ali is a third-year Data Science student at the University of Jordan, specializing in data analytics. He is part of the Data Analysis Club and aims to become a Data Analyst.
+score: 0.2324
+bio 4:
+Majid is a third-year Data Science student at Petra University, specializing in data analytics. He is part of Data Innovators and aims to work as a Data Analyst.
+score: 0.2122
+bio 5:
+Ismail is a third-year Data Science student at Al Hussein Technical University and part of the Data Enthusiasts Group. He is certified in data analytics and aims to work as a Data Analyst, turning data into business insights.
+score: 0.2030
+----------------------------------------
+query: Sophomore in Data Science
+bio 1:
+Hassan, a sophomore at Petra University, has a passion for both data science and mentoring others. He actively assists his peers with their data analysis projects and is involved in various AI-based initiatives. Hassan's career goal is to become a Data Analyst, applying his expertise to solve complex data challenges.
+score: 0.3266
+bio 2:
+Laila has always been fascinated by the patterns data reveals. Now a sophomore in Data Science and AI at Al Hussein Technical University, she spends her time analyzing datasets and volunteering as an AI Club mentor. Her goal is to make impactful contributions as a Data Scientist, blending her academic insights with real-world applications.
+score: 0.2817
+bio 3:
+Rana is a senior Data Science student at Al Hussein Technical University, focusing on data science and a member of the Data Science Network.
+score: 0.2799
+bio 4:
+Ali is a third-year Data Science student at the University of Jordan, specializing in data analytics. He is part of the Data Analysis Club and aims to become a Data Analyst.
+score: 0.2649
+bio 5:
+Tamer is a third-year Data Science student at Petra University with an interest in data engineering. He is part of the Data Science Society.
+score: 0.2596
+----------------------------------------

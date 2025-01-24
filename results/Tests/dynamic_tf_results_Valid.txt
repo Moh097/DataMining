@@ -1,0 +1,4 @@
+Bio: muna is a second-year data science student at the university of jordan, interested in analyzing large datasets to uncover hidden patterns. she is an active member of the data science club and aspires to be a data scientist, specializing in predictive analytics.
+Score: 0.4064
+Bio: rami, a senior at petra university, has a strong foundation in data science and machine learning. as an ai research assistant, he explores cutting-edge ai applications and plans to use his knowledge to build machine learning models as a machine learning engineer.
+Score: 0.2798
