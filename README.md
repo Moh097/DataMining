@@ -1,5 +1,3 @@
-Here’s the entire content in **Markdown syntax**, ready to be added to a `README.md` file on GitHub:
-
 ```markdown
 # Data Mining Assignment at AlHussein Technical University (HTU)
 
@@ -225,5 +223,3 @@ Students learn how to handle both numeric and text data, apply different mining 
 **AlHussein Technical University (HTU) – Data Mining Course Assignment**  
 Created by: **Mohammad Almasri**
 ```
-
-You can now copy and paste this into a `README.md` file in your GitHub repository. It will render properly on GitHub and provide a clear overview of your project.
